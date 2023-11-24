@@ -86,7 +86,7 @@ class ChatApp(ctk.CTk):
     def map_keywords_to_weaviate_classes(self, keywords, context):
         return {keyword: "ClassBasedOnKeywordAndContext" for keyword in keywords}
 
-     def retrieve_past_interactions(self, message, result_queue):
+    def retrieve_past_interactions(self, message, result_queue):
         # Simulated Weaviate query for past interactions
         try:
             query = {
